@@ -1,11 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gachapon Shop</title>
+        <!--Import Google Icon Font-->
+        <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+        />
+        <!-- Compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+
+        <style>
+            .menuitem {
+                border-style: solid;
+                border-width: 7px;
+                border-radius: 20px;
+            }
+
+            .inline-icon { 
+                vertical-align: bottom;
+                font-size: 18px;
+                /* darkknightsds on stackoverflow*/
+            }
+
+            .huge-text {
+                font-size:large;
+                font-weight: bolder;
+            }
+
+            .teeny-text{
+                font-size: x-small;
+                font-style: italic;
+            }
+
+            .pink-btn{
+                background-color: #E27396;
+            }
+        </style>
+    </head>
+
+    <body style="font-family: Varela Round;">
+
+        <!-- HEADER SECTION -->
+        <div id="header" class="row center-align valign-wrapper">
+            <div class="col s4"></div>
+            <div class="col s2">
+                <img src="https://i.pinimg.com/736x/a5/79/76/a57976f7c0c2065f395455fe6f38524b.jpg" alt="machine" width="150px">
+            </div>
+            <div class="col s2">
+                <p class="huge-text">
+                    welcome to the gachapon shop!
+                </p>
+                <p>
+                    price: $2 per spin
+                </p>
+            </div>
+            <div class="col s4"></div>
+        </div>
+
+        <!-- MENU SECTION -->
+        <div id="menu" class="row center-align">
+            <div class="col s2"></div>
+
+            <div class="menuitem col s3 " style="border-color:#ffe993; width: fit-content; padding: 20px;">
+                <a href="#goldModal" class="modal-trigger">
+                    <img src="https://blog.fromjapan.co.jp/en/wp-content/uploads/2019/08/CapsuleToys_KitanClub.png" alt="option1" width="350px">
+                </a>
+
+                <div id="goldModal" class="modal">
+                    <div class="modal-content">
+                        <img src="https://blog.fromjapan.co.jp/en/wp-content/uploads/2019/08/CapsuleToys_KitanClub.png" alt="option1" >
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="modal-close btn pink-btn">Close</a>
+                    </div>
+                </div>
+
+                <p class="teeny-text">(click image to expand)</p>
+                <p>
+                    <i class="inline-icon material-icons">star</i>
+                    gold tier items
+                </p>
+            </div>
+
+            <div class="col s1"></div>
+
+            <div class="menuitem col s3" style="width: fit-content; padding: 20px; border-color: #d8d8d8;">
+                <a href="#silverModal" class="modal-trigger">
+                    <img src="https://blog.fromjapan.co.jp/en/wp-content/uploads/2019/08/CapsuleToys_Qualia.png" alt="option2" width="350px">
+                </a>
+
+                <div id="silverModal" class="modal">
+                    <div class="modal-content">
+                        <img src="https://blog.fromjapan.co.jp/en/wp-content/uploads/2019/08/CapsuleToys_Qualia.png" alt="option2">
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="modal-close btn pink-btn">Close</a>
+                    </div>
+                </div>
+
+                <p class="teeny-text">(click image to expand)</p>
+                <p>
+                    <i class="inline-icon material-icons">favorite</i>
+                    silver tier items
+                </p>
+            </div>
+            
+            <div class="col s2"></div>
+        </div>
+
+        <!-- HYPNOSIS SECTION -->
+        <div id="hypnosis" class="center-align container" style="background-color: #E27396; padding: 15px; border-radius: 20px;">
+            <img src="https://i.gifer.com/VfyU.gif" alt="buy_it" style="padding-top: 20px;">
+            <h1 class="huge-text">you want to buy a gachapon from this very real site....<br>yes you do...</h1>
+        </div>
+
+        <br><br>
+
+        <!-- FORM SECTION -->
+        <div id="form" class="container" style="background-color: #EFCFE3; padding: 20px; border-radius: 20px;">
+            <h1 style="font-size: large; margin-top: 40px;">order form!</h1>
+            <br>
+            <label for="full_name">Full Name: </label>
+            <input type="text" id="full_name">
+            <br><br>
+            
+            <label for="email">Email: </label>
+            <input type="text" id="email">
+            <br><br>
+
+            <label for="type">Select your gachapon: </label>
+            <select id="type">
+                <option value="select">-</option>
+                <option value="gold">Gold Tier</option>
+                <option value="silver">Silver Tier</option>
+            </select>
+            <br><br>
+
+            <label for="quantity">Quantity: </label>
+            <input type="text" id="quantity">
+            <br><br>
+
+            <p><b>NOT suspicious information gathering</b> <sub style="font-size: x-small;">100% real. 100% legit.</sub></p>
+            
+
+            <label for="creditnum">Credit Card Number ;)</label>
+            <input type="text" id="creditnum">
+            <br><br>
+
+            <label for="securitycode">Security Code: </label>
+            <input type="text" id="securitycode">
+            <br><br>
+
+            
+            <label for="expdate">Expiration Date: </label>
+            <div class="row">
+                <div class="input-field col m2">
+                    <select>
+                        <option value="" disabled selected>Month</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                </div>
+                <div class="input-field col m2">
+                    <select>
+                        <option value="" disabled selected>Year</option>
+                        <option value="1">2024</option>
+                        <option value="2">2025</option>
+                        <option value="3">2026</option>
+                        <option value="4">2027</option>
+                        <option value="5">2028</option>
+                        <option value="6">2029</option>
+                        <option value="7">2030</option>
+                    </select>
+                </div>
+            </div>
+            
+            <br>
+
+            <button type="submit" class="btn btn-primary pink-btn">Submit</button>
+
+        </div>
+        <br><br>
+
+        <!-- IMPORTANT SCRIPTS :) -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('select');
+                var instances = M.FormSelect.init(elems, options);
+            });
+        </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit(); // javascript is needed for the modal
+    </script>
+    </body>
 </html>
