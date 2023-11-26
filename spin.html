@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spinning...</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!--Import Google Icon Font-->
+        <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+        />
+        <!-- Compiled and minified CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+        <script src="spinner.js"></script>
+    </head>
+
+    <body style="font-family: Varela Round;">
+        <div id="spinner" class="container center-align" style="background-color: #EFCFE3; padding: 20px; border-radius: 10px; margin-top: 10px;">
+            <p class="huge-text">let's spin for your prize!</p>
+            <div class="btn pink" onclick="displaySelected()" role="button">spin</div>
+            <div id="display-select">
+            </div>
+        </div>    
+    </body>
+</html>

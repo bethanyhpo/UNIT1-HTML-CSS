@@ -1,0 +1,25 @@
+.menuitem {
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 20px;
+}
+
+.inline-icon { 
+    vertical-align: bottom;
+    font-size: 18px;
+    /* darkknightsds on stackoverflow*/
+}
+
+.huge-text {
+    font-size:large;
+    font-weight: bolder;
+}
+
+.teeny-text{
+    font-size: x-small;
+    font-style: italic;
+}
+
+.pink-btn{
+    background-color: #E27396;
+}
