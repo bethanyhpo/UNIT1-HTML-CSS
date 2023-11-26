@@ -45,7 +45,7 @@ function displaySelected(){
         <br><br>
         <p>you won a...</p>
         <h2>${chosen.name}<h2>
-        <img src=${chosen.image} style="max-width: 100%; max-height: 100%">
+        <img src=${chosen.image} style="max-height: 200px">
     `;
     console.log(chosen.name);
 }
